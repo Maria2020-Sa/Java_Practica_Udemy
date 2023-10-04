@@ -5,8 +5,8 @@ public class OperadoresAsignacion {
     public static void main(String[] args) {
 
         int a = 3;
-
-        a += 1;
+        int b = 1;
+        a += b;
         System.out.println("a = " + a);
 
         a += 3;
