@@ -19,8 +19,8 @@ public class OperadoresUnarios {
 
         //posincremento:
         int d2 = a++;
-        System.out.println("d2 posincremento: " + d2 + " (el valor de la variable a primero se asigna a d2 (4) y luego incrementa en 1 la variable a (4+1=5)");
-        System.out.println("a++ posincremento= " + a);
+        System.out.println("d2 posincremento: " + d2 + " (el valor de la variable a primero se asigna a d2 (4) y luego incrementa en 1 la variable a (4+1=5)");//4
+        System.out.println("a++ posincremento= " + a);//5
 
         //decremento:
         //predecremento:
