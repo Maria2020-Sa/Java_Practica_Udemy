@@ -6,6 +6,9 @@ public class PruebaAritmetica {
         int operandoA = 6;
         int operandoB = 2;
 
+        //Instanciando un objeto para LLamando al constructor vacío.
+        new Aritmetica();
+
         //Creamos un objeto de la clase Aritmetica enviando argumentos.
         Aritmetica aritmetica = new Aritmetica(operandoA, operandoB);
 
