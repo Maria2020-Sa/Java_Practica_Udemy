@@ -22,7 +22,7 @@ public class Caja {
         System.out.println("\nEjecutando constructor con argumentos");
     }
 
-    //Metodo para calcular el volumen
+    //Función para calcular el volumen
     public int formulaVolumen (){
         return this.ancho * this.alto * this.profundo;
     }
