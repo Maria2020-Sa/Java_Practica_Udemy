@@ -2,7 +2,7 @@ public class Persona {
 
     private String nombre;//se asocia con un objeto (instancia)
     private int idPersona;//se asocia con un objeto (instancia)
-    private static int contadorPersonas;
+    private static int contadorPersonas; //se asocia con la clase
 
     public Persona (String nombre){
         this.nombre = nombre;
