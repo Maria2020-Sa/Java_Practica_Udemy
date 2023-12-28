@@ -1,15 +1,23 @@
 public class Persona {
+    private String nombre;
+    private char genero;
+    private int edad;
+    private String direccion;
 
-    private String nombre;//se asocia con un objeto (instancia)
-    private int idPersona;//se asocia con un objeto (instancia)
-    private static int contadorPersonas; //se asocia con la clase
+    public Persona (){}
 
     public Persona (String nombre){
         this.nombre = nombre;
-        this.idPersona = ++contadorPersonas;
     }
 
-    public String getNombre (){
+    public Persona (String nombre, char genero, int edad, String direccion){
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+        this.direccion = direccion;
+    }
+
+    public String getNombre() {
         return this.nombre;
     }
 
@@ -17,16 +25,37 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getIdPersona (){
-        return this.idPersona;
+    public char getGenero() {
+        return this.genero;
     }
 
-    public static int getContadorPersonas () {
-        return contadorPersonas;
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDireccion() {
+        return this.direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     @Override
     public String toString() {
-        return "ID Persona Nª: " + idPersona + ", Nombre: " + nombre + ", Contador Personas: " +contadorPersonas;
+        return "Persona {" +
+                "nombre='" + nombre + '\'' +
+                ", genero=" + genero +
+                ", edad=" + edad +
+                ", direccion='" + direccion + '\'' +
+                '}';
     }
 }
