@@ -4,6 +4,7 @@ public class Empleado extends Persona {
     private int contadorEmpleado;
 
     public Empleado (String nombre, double sueldo){
+        //Super debe ser la primera lìnea
         super (nombre);
         this.idEmpleado = ++contadorEmpleado;
         this.sueldo = sueldo;
