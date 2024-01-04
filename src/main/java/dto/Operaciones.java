@@ -1,3 +1,4 @@
+package dto;
 public class Operaciones {
 
     public static int suma (int a, int b){
